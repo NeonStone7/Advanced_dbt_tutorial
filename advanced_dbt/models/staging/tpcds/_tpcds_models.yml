@@ -1,0 +1,8 @@
+version: 2
+
+models:
+    - name: customer
+      description: "This table holds basic information about customers"
+      columns:
+          - name: c_customer_sk
+            description: "The primary key"

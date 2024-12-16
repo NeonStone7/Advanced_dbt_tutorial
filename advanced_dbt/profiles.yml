@@ -1,0 +1,14 @@
+# Note that only one of these targets is required
+
+advanced_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: advanced-dbt-tutorial-444313
+      dataset: raw_data # You can also use "schema" here
+      threads: 4 # Must be a value of 1 or greater 
+      principal: oamen9323@gmail.com
+      location: EU
+      
